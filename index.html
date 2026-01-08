@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stranger Things | Wikipedia Moderna</title>
+
+    <style>
+      :root {
+        --bg: #0d0d0d;
+        --card: #141414;
+        --primary: #e50914;
+        --text: #f5f5f5;
+        --muted: #b3b3b3;
+        --border: #2a2a2a;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      header {
+        background: radial-gradient(circle at top, #1f1f1f, #0d0d0d);
+        border-bottom: 1px solid var(--border);
+        padding: 32px 24px;
+      }
+
+      header h1 {
+        font-size: 2.4rem;
+        color: var(--primary);
+        letter-spacing: 1px;
+      }
+
+      header p {
+        color: var(--muted);
+        margin-top: 6px;
+      }
+
+      main {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 16px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 24px;
+      }
+
+      article {
+        background: var(--card);
+        padding: 32px;
+        border-radius: 14px;
+        border: 1px solid var(--border);
+      }
+
+      section + section {
+        margin-top: 40px;
+      }
+
+      h2 {
+        margin-bottom: 12px;
+        font-size: 1.6rem;
+        border-left: 4px solid var(--primary);
+        padding-left: 12px;
+      }
+
+      p {
+        margin-bottom: 16px;
+        color: #e5e5e5;
+      }
+
+      aside {
+        background: var(--card);
+        padding: 24px;
+        border-radius: 14px;
+        border: 1px solid var(--border);
+        height: fit-content;
+      }
+
+      aside h3 {
+        margin-bottom: 12px;
+        color: var(--primary);
+      }
+
+      aside ul {
+        list-style: none;
+      }
+
+      aside li + li {
+        margin-top: 8px;
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Galeria de imagens */
+      .image-gallery {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-top: 32px;
+      }
+
+      .image-gallery img {
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .image-gallery img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 20px rgba(229, 9, 20, 0.35);
+      }
+
+      footer {
+        margin-top: 48px;
+        padding: 24px;
+        text-align: center;
+        color: var(--muted);
+        border-top: 1px solid var(--border);
+      }
+
+      @media (max-width: 900px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+
+        .image-gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Stranger Things</h1>
+      <p>Série de televisão de ficção científica e terror</p>
+    </header>
+
+    <main>
+      <article>
+        <section id="introducao">
+          <h2>Introdução</h2>
+          <p>
+            <strong>Stranger Things</strong> é uma série original da
+            <abbr title="Netflix, Inc.">Netflix</abbr>, criada pelos irmãos
+            Duffer. Ambientada na década de 1980, a série mistura ficção
+            científica, terror e drama.
+          </p>
+        </section>
+
+        <section id="sinopse">
+          <h2>Sinopse</h2>
+          <p>
+            A história se passa na cidade fictícia de Hawkins, Indiana, onde o
+            desaparecimento de um garoto revela segredos do governo, forças
+            sobrenaturais e uma dimensão paralela conhecida como Mundo
+            Invertido.
+          </p>
+        </section>
+
+        <section id="temas">
+          <h2>Principais Temas</h2>
+          <p>
+            A série aborda temas como amizade, amadurecimento, lealdade e o
+            impacto de experiências traumáticas, tudo isso envolvido por uma
+            forte estética retrô dos anos 80.
+          </p>
+        </section>
+
+        <section id="acessibilidade">
+          <h2>Acessibilidade e Estrutura</h2>
+          <p>
+            Este site utiliza HTML semântico para garantir uma leitura clara por
+            leitores de tela e uma navegação acessível, seguindo boas práticas
+            da web moderna.
+          </p>
+        </section>
+      </article>
+
+      <aside>
+        <h3>Informações rápidas</h3>
+        <ul>
+          <li><strong>Criadores:</strong> Irmãos Duffer</li>
+          <li><strong>Estreia:</strong> 2016</li>
+          <li><strong>Gênero:</strong> Ficção científica / Terror</li>
+          <li><strong>Plataforma:</strong> Netflix</li>
+        </ul>
+
+        <p style="margin-top: 16px; font-size: 0.9rem; color: var(--muted)">
+          Conteúdo inspirado no modelo da Wikipedia.
+        </p>
+      </aside>
+
+      <!-- Galeria no final da página -->
+      <div class="image-gallery">
+        <img
+          src="https://i0.wp.com/tomatazos.buscafs.com/2025/07/stranger-things-temporada-5.jpg?fit=1200,628&quality=75&strip=all"
+          alt="Stranger Things - Imagem 1"
+        />
+        <img
+          src="https://wp.ufpel.edu.br/empauta/files/2017/10/strangerthings.jpg"
+          alt="Stranger Things - Imagem 2"
+        />
+        <img
+          src="https://assetsio.gnwcdn.com/Stranger-Things-5.jpg?width=690&quality=85&format=jpg&auto=webp"
+          alt="Stranger Things - Imagem 3"
+        />
+      </div>
+    </main>
+
+    <footer>
+      <p>Projeto educacional — Recriando Wikipedia | Trilha HTML</p>
+    </footer>
+  </body>
+</html>
